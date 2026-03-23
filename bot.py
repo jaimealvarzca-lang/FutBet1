@@ -10,7 +10,7 @@ from datetime import date, datetime, timezone
 from flask import Flask
 from threading import Thread
 
-TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+TELEGRAM_TOKEN = os.environ.get('8706535650:AAFyeuwKsi-tfq4t__bj8Gr3aArFLoNjido')
 
 if not TELEGRAM_TOKEN:
     raise RuntimeError(
@@ -18,7 +18,7 @@ if not TELEGRAM_TOKEN:
         "Añádelo en la pestaña Secrets del panel izquierdo."
     )
 
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
+bot = telebot.TeleBot('8706535650:AAFyeuwKsi-tfq4t__bj8Gr3aArFLoNjido')
 
 # ---------------------------------------------------------------------------
 # Flask keep-alive
